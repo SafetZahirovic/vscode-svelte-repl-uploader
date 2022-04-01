@@ -1,0 +1,58 @@
+{
+  "name": "repl-svelte",
+  "displayName": "REPL Svelte",
+  "description": "Extension to upload and read Svelte REPL",
+  "version": "0.0.1",
+  "author": "Safet Zahirovic <zahirovic.safet@gmail.com>",
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:repl-svelte.svelteREPL"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Svelte REPL upload config",
+      "properties": {
+        "replSvelte.settings.token": {
+          "type": "string",
+          "editPresentation": "singlelineText"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "repl-svelte.svelteREPL",
+        "title": "Upload to Svelte REPL"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.66.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "@vscode/test-electron": "^2.1.2",
+    "eslint": "^8.9.0",
+    "glob": "^7.2.0",
+    "mocha": "^9.2.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
