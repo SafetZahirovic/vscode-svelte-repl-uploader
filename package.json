@@ -2,7 +2,7 @@
   "name": "repl-svelte",
   "displayName": "REPL Svelte",
   "description": "Extension to upload and read Svelte REPL",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Safet Zahirovic <zahirovic.safet@gmail.com>",
   "publisher": "SafetZahirovic",
   "engines": {
