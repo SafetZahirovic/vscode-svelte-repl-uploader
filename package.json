@@ -10,6 +10,7 @@
   "categories": [
     "Other"
   ],
+  "repository": "https://github.com/SafetZahirovic/vscode-svelte-repl-uploader",
   "activationEvents": [
     "onCommand:repl-svelte.svelteREPL"
   ],
