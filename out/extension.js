@@ -35,7 +35,7 @@ const getDirectories = (src, callback) => {
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 function activate(context) {
-    let disposable = vscode.commands.registerCommand('repl-svelte.svelteREPL', async () => {
+    let disposable = vscode.commands.registerCommand('replSvelte.svelteREPL', async () => {
         const projects = vscode.workspace.workspaceFolders;
         if (!projects) {
             vscode.window.showErrorMessage('You need to have at least one project where to create types');

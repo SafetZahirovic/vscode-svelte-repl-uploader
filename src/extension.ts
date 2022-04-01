@@ -49,7 +49,7 @@ const getDirectories = (src: string, callback: (err: Error | null, matches: stri
 export function activate(context: vscode.ExtensionContext) {
 	
 
-	let disposable = vscode.commands.registerCommand('repl-svelte.svelteREPL', async () => {
+	let disposable = vscode.commands.registerCommand('replSvelte.svelteREPL', async () => {
 		const projects = vscode.workspace.workspaceFolders;
 		if(!projects) {
 			vscode.window.showErrorMessage('You need to have at least one project where to create types');
@@ -79,6 +79,11 @@ export function activate(context: vscode.ExtensionContext) {
 						placeHolder: 'Files to upload',
 						canPickMany: true,
 					});
+
+					if(!filesToUpload || filesToUpload.length <= 0) {
+						vscode.window.showErrorMessage('You need to pick at least one file. Aborting');
+						return
+					}
 					const uploadName = await vscode.window.showInputBox({
 						placeHolder: "REPL name",
 						prompt: "Name of the REPL playground. Default: Hello World",

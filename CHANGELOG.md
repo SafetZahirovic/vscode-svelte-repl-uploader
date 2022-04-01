@@ -1,9 +1,14 @@
 # Change Log
 
-All notable changes to the "repl-svelte" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
+## [0.0.1] - 02.04.22
+### Fixes
 - Initial release
+
+## [0.0.2] - 02.04.22
+### Fixes
+- Fixed error where the plugin wouldn't start
+
+## [0.0.3] - 02.04.22
+### Added
+- Added images to readme.md
+- Added more user feedback when not completing some of necessery steps

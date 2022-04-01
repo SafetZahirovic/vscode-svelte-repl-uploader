@@ -2,8 +2,9 @@
   "name": "repl-svelte",
   "displayName": "REPL Svelte",
   "description": "Extension to upload and read Svelte REPL",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Safet Zahirovic <zahirovic.safet@gmail.com>",
+  "publisher": "SafetZahirovic",
   "engines": {
     "vscode": "^1.66.0"
   },
@@ -12,7 +13,7 @@
   ],
   "repository": "https://github.com/SafetZahirovic/vscode-svelte-repl-uploader",
   "activationEvents": [
-    "onCommand:repl-svelte.svelteREPL"
+    "onCommand:replSvelte.svelteREPL"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -27,7 +28,7 @@
     },
     "commands": [
       {
-        "command": "repl-svelte.svelteREPL",
+        "command": "replSvelte.svelteREPL",
         "title": "Upload to Svelte REPL"
       }
     ]
@@ -49,11 +50,12 @@
     "@typescript-eslint/parser": "^5.12.1",
     "@vscode/test-electron": "^2.1.2",
     "eslint": "^8.9.0",
-    "glob": "^7.2.0",
+
     "mocha": "^9.2.1",
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "axios": "^0.26.1"
+    "axios": "^0.26.1",
+    "glob": "^7.2.0"
   }
 }
