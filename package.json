@@ -2,7 +2,7 @@
   "name": "repl-svelte",
   "displayName": "REPL Svelte",
   "description": "Extension to upload and read Svelte REPL",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Safet Zahirovic <zahirovic.safet@gmail.com>",
   "publisher": "SafetZahirovic",
   "engines": {
@@ -11,6 +11,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
   "repository": "https://github.com/SafetZahirovic/vscode-svelte-repl-uploader",
   "activationEvents": [
     "onCommand:replSvelte.svelteREPL"

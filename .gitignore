@@ -1,3 +1,5 @@
 node_modules
 .vscode
 *.vsix
+out
+.DS_Store

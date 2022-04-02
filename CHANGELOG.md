@@ -12,3 +12,7 @@
 ### Added
 - Added images to readme.md
 - Added more user feedback when not completing some of necessery steps
+
+## [0.0.4] - 02.04.22
+### Added
+- Added icon
