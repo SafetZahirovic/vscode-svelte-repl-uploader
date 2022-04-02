@@ -2,7 +2,7 @@
   "name": "repl-svelte",
   "displayName": "REPL Svelte",
   "description": "Extension to upload and read Svelte REPL",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Safet Zahirovic <zahirovic.safet@gmail.com>",
   "publisher": "SafetZahirovic",
   "engines": {
@@ -14,7 +14,9 @@
   "icon": "images/icon.png",
   "repository": "https://github.com/SafetZahirovic/vscode-svelte-repl-uploader",
   "activationEvents": [
-    "onCommand:replSvelte.svelteREPL"
+    "onCommand:replSvelte.svelteREPLUpload",
+    "onCommand:replSvelte.svelteREPLNavigate",
+    "onCommand:replSvelte.svelteREPLDelete"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -29,8 +31,16 @@
     },
     "commands": [
       {
-        "command": "replSvelte.svelteREPL",
-        "title": "Upload to Svelte REPL"
+        "command": "replSvelte.svelteREPLUpload",
+        "title": "REPL Svelte: Upload REPL gist"
+      },
+      {
+        "command": "replSvelte.svelteREPLNavigate",
+        "title": "REPL Svelte: Navigate to REPL gist"
+      },
+      {
+        "command": "replSvelte.svelteREPLDelete",
+        "title": "REPL Svelte: Delete REPL gist(s)"
       }
     ]
   },
