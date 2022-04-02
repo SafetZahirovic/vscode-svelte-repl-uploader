@@ -16,3 +16,7 @@
 ## [0.0.4] - 02.04.22
 ### Added
 - Added icon
+## [0.0.5] - 02.04.22
+### Added
+- Deleting gists
+- Navigating to a specific gist
